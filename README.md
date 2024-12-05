@@ -6,7 +6,6 @@ The project uses the winequalityN.csv dataset, which includes both red and white
 
 Dataset Description
 The dataset contains the following features:
-
 type: Type of wine (red or white)
 fixed acidity: Amount of fixed acidity in the wine
 volatile acidity: Amount of volatile acidity in the wine
@@ -20,6 +19,7 @@ pH: pH level of the wine
 sulphates: Sulphate content in the wine
 alcohol: Alcohol content in the wine
 quality: Quality score of the wine (integer scale from 0 to 10)
+
 Steps in the Project
 1. Data Loading and Cleaning
 The dataset is loaded using pandas.read_csv().
@@ -42,9 +42,10 @@ The Random Forest model is further evaluated based on feature importance, which 
 6. Results
 The models achieve high accuracy, with Logistic Regression achieving an accuracy of around 97% on the test set.
 Random Forest is used to calculate feature importance, highlighting which features contribute most to predicting wine quality.
+
 Code Implementation
 python
-Copiar código
+
 # Import necessary libraries
 import pandas as pd
 import numpy as np
@@ -124,5 +125,5 @@ scikit-learn
 You can install the required libraries using pip:
 
 bash
-Copiar código
+
 pip install pandas numpy seaborn matplotlib scikit-learn
